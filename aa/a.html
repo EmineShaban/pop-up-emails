@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Style</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f2ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .popup-container {
+            background-color: #f4f2ff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            position: relative;
+        }
+        .popup-container::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(136,136,206,1) 0%, rgba(136,136,206,0) 80%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #ccc;
+        }
+        .headline {
+            font-size: 1em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        .highlight {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="close-btn">✕</div>
+        <div class="headline">This is the</div>
+        <div class="highlight">Best 10% OFF</div>
+    </div>
+</body>
+</html>

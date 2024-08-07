@@ -1,40 +1,106 @@
-.email-collect-form{
- 
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.756);
-  visibility: visible;
-  z-index: 10;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+.email-collect-form {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.756);
+    visibility: visible;
+    z-index: 10;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
 }
 
 
-footer .email-collect-form .email-collect-div{
-    
-    /* background-color: rgb(246, 245, 245); */
-    position: absolute;
+footer .email-collect-form .email-collect-div {
+
+     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px 35px;
-    width: 50%;
-    /* border-radius: 12px; */
-    display: block;
+    width: 70%;
+     display: block;
     background-color: unset;
-    background-color: #365088a0;
+    background-color: #365088ce;
 
-  }
+}
 
-  footer form div button{
+footer form div button {
     background-color: #365088;
+    padding: 10px 13px;
+}
 
-  }
 
-
-  .email-collect-div p:first-child{
+.email-collect-div p:first-child {
     margin-bottom: 10px;
-  }
+}
+
+footer form {
+    width: auto;
+    margin: 0 auto;
+}
+
+footer form div button {
+    background-color: #ff3000;
+    padding: 10px 13px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-weight: 600;
+}
+footer form div{
+    flex-direction: column;
+    background-color: unset;
+
+}
+footer form div input{
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px 25px;
+}
+footer form p{
+    font-size: 16px;
+    font-weight: 600;
+ 
+}
+
+footer form div input {
+    width: 80%;
+
+}
+
+/* 
+footer form div.back{  
+        width: 120px;
+        height: 120px; 
+        background-color: #e0e0f8;
+        border-radius: 50%;
+        margin: auto;
+
+        display: block;
+        margin-bottom: 20px;
+}
+ */
+
+ 
+ /* .email-collect-form{
+    position: relative;
+ }
+ 
+.email-collect-div::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(136, 136, 206, 1) 0%, rgba(136, 136, 206, 0) 80%);
+    border-radius: 50%;
+    z-index: -1;
+} */
+
+
+@media screen and (min-width: 500px) {}
