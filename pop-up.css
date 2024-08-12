@@ -15,13 +15,13 @@
 
 footer .email-collect-form .email-collect-div {
 
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px 35px;
     width: 70%;
-     display: block;
+    display: block;
     background-color: unset;
     background-color: #365088ce;
 
@@ -50,20 +50,23 @@ footer form div button {
     margin: 0;
     font-weight: 600;
 }
-footer form div{
+
+footer form div {
     flex-direction: column;
     background-color: unset;
 
 }
-footer form div input{
+
+footer form div input {
     width: 100%;
     margin: 15px auto;
     padding: 10px 25px;
 }
-footer form p{
+
+footer form p {
     font-size: 16px;
     font-weight: 600;
- 
+
 }
 
 footer form div input {
@@ -71,44 +74,29 @@ footer form div input {
 
 }
 
-/* 
-footer form div.back{  
-        width: 120px;
-        height: 120px; 
-        background-color: #e0e0f8;
-        border-radius: 50%;
-        margin: auto;
 
-        display: block;
-        margin-bottom: 20px;
-}
- */
 
- 
- /* .email-collect-form{
-    position: relative;
- }
- 
-.email-collect-div::before {
-    content: '';
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(136, 136, 206, 1) 0%, rgba(136, 136, 206, 0) 80%);
-    border-radius: 50%;
-    z-index: -1;
-} */
-
-.email-collect-div p:first-child,
-.email-collect-div p:nth-child(2){
+.email-collect-div p:nth-child(2),
+.email-collect-div p:nth-child(3) {
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 700;
 }
 
+.email-collect-div .close {
 
+    z-index: 100;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    text-align: end;
+    margin-bottom: -30px;
+}
+.modal2 {
+ visibility: hidden;   
+}
+.is-visible{
+    visibility: visible;   
 
+}
 @media screen and (min-width: 500px) {}
