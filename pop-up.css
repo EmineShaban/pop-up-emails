@@ -102,5 +102,13 @@ footer form div.back{
     z-index: -1;
 } */
 
+.email-collect-div p:first-child,
+.email-collect-div p:nth-child(2){
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
 
 @media screen and (min-width: 500px) {}
