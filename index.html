@@ -1795,25 +1795,23 @@
 
 
 
-    <script>
-        $(document).click(function (e) {
-            if (($(e.target).is('.modal2')) || $(e.target).is('.close')) {
+<script>
+    $(document).click(function (e) {
+        if (($(e.target).is('.modal2')) || $(e.target).is('.close')) {
+            $(".modal2").removeClass('is-visible');
+        }
+
+        setTimeout(function () {
+
+            if ($('.new_user').css('display') == 'block') {
+                console.log("111")
+                console.log("111aaa")
                 $(".modal2").removeClass('is-visible');
             }
-            console.log("aaaaa")
-            setTimeout(function () {
+        }, 7000)
 
-                if ($('.new_user').css('display') == 'block') {
-                    console.log("111")
-                    console.log("111aaa")
-                    $(".modal2").removeClass('is-visible');
-
-                }
-            }, 10000)
-
-            console.log("222")
-        }); 
-    </script>
+    }); 
+</script>
 </body>
 
 </html>
